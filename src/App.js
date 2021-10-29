@@ -23,3 +23,15 @@ function App() {
 }
 
 export default App;
+
+/**
+ * ns1095.ui-dns.de	IONOS Nameserver
+ns1101.ui-dns.biz	IONOS Nameserver
+ns1039.ui-dns.org	IONOS Nameserver
+ns1096.ui-dns.com	IONOS Nameserver
+
+rigid-bear-atn2t1ibxme6lxfwtefz7v6f.herokudns.com
+_domainconnect.1and1.com
+
+autodiscover.www   adsredir.ionos.info
+ */
