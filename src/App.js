@@ -1,31 +1,22 @@
-import logo from './logo.svg';
-import './App.scss';
-import Button from 'react-bootstrap/Button';
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import logo from "./logo.svg";
+import engagement from "./engagment.m4v";
+import "./App.scss";
+import Button from "react-bootstrap/Button";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-        <Row className="mx-0">
-  <Button as={Col} variant="primary">Button #1</Button>
-  <Button as={Col} variant="secondary" className="mx-2">Button #2</Button>
-  <Button as={Col} variant="success">Button #3</Button>
-</Row>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <section className="App">
+      <header className="video-header">
+        <video autoPlay loop playsInline muted>
+          <source src={engagement} type="video/mp4" />
+        </video>
+        <div className="viewport-header">
+          <h1>Big Day is on {Date("2022-02-07T00:00:00+0530")}</h1>
+        </div>
       </header>
-    </div>
+    </section>
   );
 }
 
