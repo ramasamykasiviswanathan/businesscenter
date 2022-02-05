@@ -13,10 +13,10 @@ function App() {
           <source src={engagement} type="video/mp4" />
         </video>
         <div className="viewport-header">
-          {new Date() >= eventdate && (
+          {new Date().getDate() <= eventdate.getDate() && (
             <h1>Big Day is on {eventdate.toLocaleString()}</h1>
           )}
-          {new Date() <= eventdate && (
+          {new Date().getDate() >= eventdate.getDate() && (
             <iframe
               title="YouTube video player"
               className="youtube-player"
