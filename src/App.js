@@ -13,22 +13,17 @@ function App() {
           <source src={engagement} type="video/mp4" />
         </video>
         <div className="viewport-header">
-          {new Date().getDate() <= eventdate.getDate() && (
-            <h1>Big Day is on {eventdate.toLocaleString()}</h1>
-          )}
-          {new Date().getDate() >= eventdate.getDate() && (
-            <iframe
-              title="YouTube video player"
-              className="youtube-player"
-              type="text/html"
-              width="75%"
-              height="90%"
-              src="https://www.youtube.com/embed/Rl6AI4cYpyI?rel=0&autoplay=1"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          )}
+          <iframe
+            title="YouTube video player"
+            className="youtube-player"
+            type="text/html"
+            width="75%"
+            height="90%"
+            src="https://www.youtube.com/embed/Rl6AI4cYpyI?rel=0&autoplay=1"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </div>
       </header>
     </section>
